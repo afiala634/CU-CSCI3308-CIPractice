@@ -163,6 +163,16 @@ START_TEST(test_triangle)
     ck_assert(triangle(&a, &b, &c) == 2);
 
 
+    a.x = 1;
+    a.y = 1;
+    b.x = 1;
+    b.y = 3;
+    c.x = 3;
+    c.y = 1;
+
+    ck_assert(triangle(&a, &b, &c) == 2);
+
+
 }
 END_TEST
 

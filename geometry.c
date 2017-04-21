@@ -74,7 +74,7 @@ double triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c){
     double area = (a->x * (b->y - c->y)) + (b->x * (c->y - a->y)) + (c->x * (a->y - b->y));
     area = abs(area / 2);
 
-    //printf("%f",area);
+    printf("%f",area);
 
     return area;
 }
